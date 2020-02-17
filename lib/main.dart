@@ -24,16 +24,45 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Meu App"),
       ),
-      body: Column(
-        children: <Widget>[
-          Text("item 1"),
-          Text("item 2"),
-          Text("item 3"),
-          Text("item 4"),
-          Text("item 5"),
-          Text("item 6"),
-          Text("item 7"),
-        ],
+      body: Container(
+        width: double.infinity,
+        color: Colors.blue,
+        // child:Row(
+        // child: Column(
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          // mainAxisAlignment: MainAxisAlignment.spaceAround,
+          // crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              color: Colors.yellow,
+              child: Text("Item 0.1"),
+            ),
+            Text("item 1"),
+            Text("item 2"),
+            Text("item 3"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            Text("item 4"),
+            // Column(
+            //   children: <Widget>[
+            //     Text("C1"),
+            //     Text("C2"),
+            //     Text("C3"),
+            //     Text("C4"),
+            //   ],
+            // )
+          ],
+        ),
       ),
     );
   }
